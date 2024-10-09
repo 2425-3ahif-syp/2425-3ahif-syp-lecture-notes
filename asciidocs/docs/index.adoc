@@ -19,5 +19,66 @@ endif::backend-html5[]
 
 image::tdd.png[]
 
+== 2024-10-08
+
+=== Maven
+
+* Motivation (Wieso maven)
+
+** Früher gab es für jede IDE ein eigenes Projektformat (ant). Es war nicht möglich zB ein Netbeans Projekt in Eclipse zu öffnen.
+
+* Was ist maven?
+
+** maven ist ein Package Manager
+** ein weiterer package manager ist gradle
+
+* Vorteile von maven
+
+** maven hat eine einheitliche Struktur der Projektstruktur (Dateien und Verzeichnisse)
+*** https://maven.apache.org/guides/introduction/introduction-to-the-standard-directory-layout.html[Introduction to the Standard Directory Layout^]
+** Die Libraries (Abhängigkeiten) werden automatisch heruntergeladen.
+*** Die Libraries werden optimiert gespeichert, dh nicht in jedem Projekt, sondern im Home-Verzeichnis
+** maven hat noch viel mehr Funktionalitäten ...
+
+== Erstellen von Webseiten und Slides mit Asciidoctor
+
+. Erstellen eines Repos vom Asciidoctor-Template
+
+* https://github.com/htl-leonding-college/asciidoctor-html-template[^]
++
+image::create-repo-from-template.png[]
+
+. Clonen des Repos
+
+. Committen und pushen der Änderungen
+
+. Aktivieren der gh-pages in den Settings
+
+image:enable-gh-pages.png[]
+
+. Aktiviere Link zu Website
+
+image::link-to-gh-pages.png[]
+
+
+=== Beispiele
+
+* https://github.com/htl-leonding-college/leocloud-intro-slides[leocloud presentation^]
+
+* https://github.com/htl-leonding-college/git-intro-slides[git intro slides^]
+
+* https://docs.asciidoctor.org/reveal.js-converter/latest/project/showcase/
+
+=== Ressourcen
+
+* https://www.pexels.com/de-de/
+* https://undraw.co
+* https://unsplash.com
+* https://pixabay.com/
+
+=== Doku
+
+*
+
 
 
