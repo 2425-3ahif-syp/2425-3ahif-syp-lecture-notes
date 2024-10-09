@@ -451,7 +451,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="details">
 <span id="author" class="author">Thomas Stütz</span><br>
 <span id="revnumber">version 1.0.0,</span>
-<span id="revdate">2024-10-01</span>
+<span id="revdate">2024-10-09</span>
 <br><span id="revremark">Lecture Notes for Courses at HTL Leonding</span>
 </div>
 <div id="toc" class="toc2">
@@ -460,6 +460,18 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#_2024_10_01">1. 2024-10-01</a>
 <ul class="sectlevel2">
 <li><a href="#_test_driven_development_tdd">1.1. Test-Driven-Development (TDD)</a></li>
+</ul>
+</li>
+<li><a href="#_2024_10_08">2. 2024-10-08</a>
+<ul class="sectlevel2">
+<li><a href="#_maven">2.1. Maven</a></li>
+</ul>
+</li>
+<li><a href="#_erstellen_von_webseiten_und_slides_mit_asciidoctor">3. Erstellen von Webseiten und Slides mit Asciidoctor</a>
+<ul class="sectlevel2">
+<li><a href="#_beispiele">3.1. Beispiele</a></li>
+<li><a href="#_ressourcen">3.2. Ressourcen</a></li>
+<li><a href="#_doku">3.3. Doku</a></li>
 </ul>
 </li>
 </ul>
@@ -488,11 +500,165 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </div>
 </div>
+<div class="sect1">
+<h2 id="_2024_10_08"><a class="anchor" href="#_2024_10_08"></a>2. 2024-10-08</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_maven"><a class="anchor" href="#_maven"></a>2.1. Maven</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Motivation (Wieso maven)</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Früher gab es für jede IDE ein eigenes Projektformat (ant). Es war nicht möglich zB ein Netbeans Projekt in Eclipse zu öffnen.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Was ist maven?</p>
+<div class="ulist">
+<ul>
+<li>
+<p>maven ist ein Package Manager</p>
+</li>
+<li>
+<p>ein weiterer package manager ist gradle</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Vorteile von maven</p>
+<div class="ulist">
+<ul>
+<li>
+<p>maven hat eine einheitliche Struktur der Projektstruktur (Dateien und Verzeichnisse)</p>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://maven.apache.org/guides/introduction/introduction-to-the-standard-directory-layout.html" target="_blank" rel="noopener">Introduction to the Standard Directory Layout</a></p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Die Libraries (Abhängigkeiten) werden automatisch heruntergeladen.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Die Libraries werden optimiert gespeichert, dh nicht in jedem Projekt, sondern im Home-Verzeichnis</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>maven hat noch viel mehr Funktionalitäten &#8230;&#8203;</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_erstellen_von_webseiten_und_slides_mit_asciidoctor"><a class="anchor" href="#_erstellen_von_webseiten_und_slides_mit_asciidoctor"></a>3. Erstellen von Webseiten und Slides mit Asciidoctor</h2>
+<div class="sectionbody">
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Erstellen eines Repos vom Asciidoctor-Template</p>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://github.com/htl-leonding-college/asciidoctor-html-template" class="bare" target="_blank" rel="noopener">https://github.com/htl-leonding-college/asciidoctor-html-template</a></p>
+<div class="imageblock">
+<div class="content">
+<img src="images/create-repo-from-template.png" alt="create repo from template">
+</div>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Clonen des Repos</p>
+</li>
+<li>
+<p>Committen und pushen der Änderungen</p>
+</li>
+<li>
+<p>Aktivieren der gh-pages in den Settings</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="images/enable-gh-pages.png" alt="enable gh pages"></span></p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Aktiviere Link zu Website</p>
+</li>
+</ol>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="images/link-to-gh-pages.png" alt="link to gh pages">
+</div>
+</div>
+<div class="sect2">
+<h3 id="_beispiele"><a class="anchor" href="#_beispiele"></a>3.1. Beispiele</h3>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://github.com/htl-leonding-college/leocloud-intro-slides" target="_blank" rel="noopener">leocloud presentation</a></p>
+</li>
+<li>
+<p><a href="https://github.com/htl-leonding-college/git-intro-slides" target="_blank" rel="noopener">git intro slides</a></p>
+</li>
+<li>
+<p><a href="https://docs.asciidoctor.org/reveal.js-converter/latest/project/showcase/" class="bare">https://docs.asciidoctor.org/reveal.js-converter/latest/project/showcase/</a></p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_ressourcen"><a class="anchor" href="#_ressourcen"></a>3.2. Ressourcen</h3>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://www.pexels.com/de-de/" class="bare">https://www.pexels.com/de-de/</a></p>
+</li>
+<li>
+<p><a href="https://undraw.co" class="bare">https://undraw.co</a></p>
+</li>
+<li>
+<p><a href="https://unsplash.com" class="bare">https://unsplash.com</a></p>
+</li>
+<li>
+<p><a href="https://pixabay.com/" class="bare">https://pixabay.com/</a></p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_doku"><a class="anchor" href="#_doku"></a>3.3. Doku</h3>
+<div class="paragraph">
+<p>*</p>
+</div>
+</div>
+</div>
+</div>
 </div>
 <div id="footer">
 <div id="footer-text">
 Version 1.0.0<br>
-Last updated 2024-10-01 08:43:11 UTC
+Last updated 2024-10-09 07:09:32 UTC
 </div>
 </div>
 </body>
