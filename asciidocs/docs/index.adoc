@@ -3,6 +3,7 @@ Thomas Stütz
 1.0.0, {docdate}: Lecture Notes for Courses at HTL Leonding
 :icons: font
 :experimental:
+:sectnumlevels: 4
 :sectnums:
 ifndef::imagesdir[:imagesdir: images]
 :toc:
@@ -83,6 +84,37 @@ image::link-to-gh-pages.png[]
 * *Virtualisierung* bezeichnet in der Informatik die Nachbildung eines Hard- oder Software-Objekts durch ein ähnliches Objekt vom selben Typ mit Hilfe einer Abstraktionsschicht. Dadurch lassen sich virtuelle (d. h. nicht-physische) Geräte oder Dienste wie emulierte Hardware, Betriebssysteme, Datenspeicher oder Netzwerkressourcen erzeugen. Dies erlaubt es etwa, Computer-Ressourcen (insbesondere im Server-Bereich) transparent zusammenzufassen oder aufzuteilen, oder ein Betriebssystem innerhalb eines anderen auszuführen. Dadurch können u. a. mehrere Betriebssysteme auf einem physischen Server oder „Host“ ausgeführt werden.
 
 
+== 2024-11-05
+
+=== Projektziele (Buch)
+
+image::magisches-dreieck.png[]
 
 
+image::projektziele.png[]
+
+
+=== Projektteams
+
+image::projekte.png[]
+
+
+=== Projektauftrag
+
+
+
+=== Pflichtenheft
+
+image::v-modell.png[]
+
+==== Ausgangssituation
+==== Istzustand
+==== Problemstellung
+==== Zielsetzung
+==== Anforderungen (Soll-Zustand)
+===== Funktionale Anforderungen (FA)
+===== Nichtfunktionale Anforderungen (NFA)
+==== Mengengerüst
+
+image::nichtfunktionale-anforderungen.png[]
 
