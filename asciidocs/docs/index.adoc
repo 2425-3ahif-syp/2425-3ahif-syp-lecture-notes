@@ -110,11 +110,126 @@ image::v-modell.png[]
 ==== Ausgangssituation
 ==== Istzustand
 ==== Problemstellung
-==== Zielsetzung
+==== Ziele
 ==== Anforderungen (Soll-Zustand)
 ===== Funktionale Anforderungen (FA)
 ===== Nichtfunktionale Anforderungen (NFA)
 ==== Mengengerüst
 
 image::nichtfunktionale-anforderungen.png[]
+
+== 2024-12-10
+
+=== Datenbanken
+
+* noSQL
+* Relationale Datenbanken
+
+==== kommerzielle Produkte
+
+* Oracle
+* Microsoft SQL Server
+
+==== Open Source
+
+* lokal lauffähig ohne Installation
+
+** SQLite
+** H2
+** Derby DB
+
+* größere Installationen
+
+** MySQL
+** MariaDB
+** PostgreSQL
+
+
+=== Docker
+
+https://bit.ly/htl-leonding-scripts[^]
+
+
+== 2025-01-08
+
+=== UML-Klassendiagramm
+
+==== Plugins für Intellij
+
+image::plugin_asciidoctor.png[]
+image::plugin_plantuml.png[]
+
+* Bitte graphviz installieren
+** mit brew
+** apt: sudo apt install graphviz
+
+==== plantuml-webite
+
+* https://plantuml.com/en/class-diagram
+
+==== plantuml im code zeichnen
+
+[plantuml,cld,png]
+----
+@startuml
+class Person {
+-firstName: String
+- firma: Firma
+}
+
+class Hobby
+
+(Person,Hobby) .. Ausfuehrung
+
+
+class Firma {
+  angestellte : List<Person>
+}
+
+Person "*" --> "0..1" Firma :  arbeitet für >
+Firma --> Person
+
+@enduml
+----
+
+[source,java]
+----
+Person hansi = new Person("hansi");
+hansi.setFirma(new Firma("IBM"));
+
+System.out.printLine(hansi.getFirma().getName());
+// IBM
+----
+
+
+image::uml-complete-incomplete.png[]
+image::uml-disjoint-overlapping.png[]
+
+
+==== Beziehungen CLD
+
+* Vererbung
+* Assoziation (benutzt)
+* Aggregation (Ganzes-Teile-Beziehung, zerstörungsfrei)
+** zB Auto - Autoreifen
+* Komposition (Ganzes-Teile-Beziehung, zerstörend)
+** zB Haus - Etage, Buch - Kapitel
+
+image::uml-beziehungen-notation.png[]
+
+Extension -> Vererbung
+
+IMPORTANT: Im Code gibt es zwischen Assoziation, Aggregation und Komposition keinen Unterschied
+
+=== Asciidoctor - Wiederholung
+
+* Callout
+* Admonition
+* Präambel (preamble)
+** toc
+** Verzeichnis für images usw
+* Table
+* Einfügen von Code
+* numbered and unnumbered Lists
+
 
