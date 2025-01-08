@@ -436,6 +436,120 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </style>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
+pre.rouge table td { padding: 5px; }
+pre.rouge table pre { margin: 0; }
+pre.rouge, pre.rouge .w {
+  color: #24292f;
+  background-color: #f6f8fa;
+}
+pre.rouge .k, pre.rouge .kd, pre.rouge .kn, pre.rouge .kp, pre.rouge .kr, pre.rouge .kt, pre.rouge .kv {
+  color: #cf222e;
+}
+pre.rouge .gr {
+  color: #f6f8fa;
+}
+pre.rouge .gd {
+  color: #82071e;
+  background-color: #ffebe9;
+}
+pre.rouge .nb {
+  color: #953800;
+}
+pre.rouge .nc {
+  color: #953800;
+}
+pre.rouge .no {
+  color: #953800;
+}
+pre.rouge .nn {
+  color: #953800;
+}
+pre.rouge .sr {
+  color: #116329;
+}
+pre.rouge .na {
+  color: #116329;
+}
+pre.rouge .nt {
+  color: #116329;
+}
+pre.rouge .gi {
+  color: #116329;
+  background-color: #dafbe1;
+}
+pre.rouge .kc {
+  color: #0550ae;
+}
+pre.rouge .l, pre.rouge .ld, pre.rouge .m, pre.rouge .mb, pre.rouge .mf, pre.rouge .mh, pre.rouge .mi, pre.rouge .il, pre.rouge .mo, pre.rouge .mx {
+  color: #0550ae;
+}
+pre.rouge .sb {
+  color: #0550ae;
+}
+pre.rouge .bp {
+  color: #0550ae;
+}
+pre.rouge .ne {
+  color: #0550ae;
+}
+pre.rouge .nl {
+  color: #0550ae;
+}
+pre.rouge .py {
+  color: #0550ae;
+}
+pre.rouge .nv, pre.rouge .vc, pre.rouge .vg, pre.rouge .vi, pre.rouge .vm {
+  color: #0550ae;
+}
+pre.rouge .o, pre.rouge .ow {
+  color: #0550ae;
+}
+pre.rouge .gh {
+  color: #0550ae;
+  font-weight: bold;
+}
+pre.rouge .gu {
+  color: #0550ae;
+  font-weight: bold;
+}
+pre.rouge .s, pre.rouge .sa, pre.rouge .sc, pre.rouge .dl, pre.rouge .sd, pre.rouge .s2, pre.rouge .se, pre.rouge .sh, pre.rouge .sx, pre.rouge .s1, pre.rouge .ss {
+  color: #0a3069;
+}
+pre.rouge .nd {
+  color: #8250df;
+}
+pre.rouge .nf, pre.rouge .fm {
+  color: #8250df;
+}
+pre.rouge .err {
+  color: #f6f8fa;
+  background-color: #82071e;
+}
+pre.rouge .c, pre.rouge .ch, pre.rouge .cd, pre.rouge .cm, pre.rouge .cp, pre.rouge .cpf, pre.rouge .c1, pre.rouge .cs {
+  color: #6e7781;
+}
+pre.rouge .gl {
+  color: #6e7781;
+}
+pre.rouge .gt {
+  color: #6e7781;
+}
+pre.rouge .ni {
+  color: #24292f;
+}
+pre.rouge .si {
+  color: #24292f;
+}
+pre.rouge .ge {
+  color: #24292f;
+  font-style: italic;
+}
+pre.rouge .gs {
+  color: #24292f;
+  font-weight: bold;
+}
+</style>
+<style>
     pre.rouge .hll {
         background-color: #ffc;
         display: block;
@@ -451,7 +565,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="details">
 <span id="author" class="author">Thomas Stütz</span><br>
 <span id="revnumber">version 1.0.0,</span>
-<span id="revdate">2024-11-05</span>
+<span id="revdate">2025-01-08</span>
 <br><span id="revremark">Lecture Notes for Courses at HTL Leonding</span>
 </div>
 <div id="toc" class="toc2">
@@ -481,6 +595,18 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#_projektteams">5.2. Projektteams</a></li>
 <li><a href="#_projektauftrag">5.3. Projektauftrag</a></li>
 <li><a href="#_pflichtenheft">5.4. Pflichtenheft</a></li>
+</ul>
+</li>
+<li><a href="#_2024_12_10">6. 2024-12-10</a>
+<ul class="sectlevel2">
+<li><a href="#_datenbanken">6.1. Datenbanken</a></li>
+<li><a href="#_docker">6.2. Docker</a></li>
+</ul>
+</li>
+<li><a href="#_2025_01_08">7. 2025-01-08</a>
+<ul class="sectlevel2">
+<li><a href="#_uml_klassendiagramm">7.1. UML-Klassendiagramm</a></li>
+<li><a href="#_asciidoctor_wiederholung">7.2. Asciidoctor - Wiederholung</a></li>
 </ul>
 </li>
 </ul>
@@ -721,7 +847,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 
 </div>
 <div class="sect3">
-<h4 id="_zielsetzung"><a class="anchor" href="#_zielsetzung"></a>5.4.4. Zielsetzung</h4>
+<h4 id="_ziele"><a class="anchor" href="#_ziele"></a>5.4.4. Ziele</h4>
 
 </div>
 <div class="sect3">
@@ -746,11 +872,250 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </div>
 </div>
+<div class="sect1">
+<h2 id="_2024_12_10"><a class="anchor" href="#_2024_12_10"></a>6. 2024-12-10</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_datenbanken"><a class="anchor" href="#_datenbanken"></a>6.1. Datenbanken</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>noSQL</p>
+</li>
+<li>
+<p>Relationale Datenbanken</p>
+</li>
+</ul>
+</div>
+<div class="sect3">
+<h4 id="_kommerzielle_produkte"><a class="anchor" href="#_kommerzielle_produkte"></a>6.1.1. kommerzielle Produkte</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>Oracle</p>
+</li>
+<li>
+<p>Microsoft SQL Server</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_open_source"><a class="anchor" href="#_open_source"></a>6.1.2. Open Source</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>lokal lauffähig ohne Installation</p>
+<div class="ulist">
+<ul>
+<li>
+<p>SQLite</p>
+</li>
+<li>
+<p>H2</p>
+</li>
+<li>
+<p>Derby DB</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>größere Installationen</p>
+<div class="ulist">
+<ul>
+<li>
+<p>MySQL</p>
+</li>
+<li>
+<p>MariaDB</p>
+</li>
+<li>
+<p>PostgreSQL</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_docker"><a class="anchor" href="#_docker"></a>6.2. Docker</h3>
+<div class="paragraph">
+<p><a href="https://bit.ly/htl-leonding-scripts" class="bare" target="_blank" rel="noopener">https://bit.ly/htl-leonding-scripts</a></p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_2025_01_08"><a class="anchor" href="#_2025_01_08"></a>7. 2025-01-08</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_uml_klassendiagramm"><a class="anchor" href="#_uml_klassendiagramm"></a>7.1. UML-Klassendiagramm</h3>
+<div class="sect3">
+<h4 id="_plugins_für_intellij"><a class="anchor" href="#_plugins_für_intellij"></a>7.1.1. Plugins für Intellij</h4>
+<div class="imageblock">
+<div class="content">
+<img src="images/plugin_asciidoctor.png" alt="plugin asciidoctor">
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="images/plugin_plantuml.png" alt="plugin plantuml">
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Bitte graphviz installieren</p>
+<div class="ulist">
+<ul>
+<li>
+<p>mit brew</p>
+</li>
+<li>
+<p>apt: sudo apt install graphviz</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_plantuml_webite"><a class="anchor" href="#_plantuml_webite"></a>7.1.2. plantuml-webite</h4>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://plantuml.com/en/class-diagram" class="bare">https://plantuml.com/en/class-diagram</a></p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_plantuml_im_code_zeichnen"><a class="anchor" href="#_plantuml_im_code_zeichnen"></a>7.1.3. plantuml im code zeichnen</h4>
+<div class="imageblock">
+<div class="content">
+<img src="images/cld.png" alt="cld" width="443" height="343">
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="rouge highlight"><code data-lang="java"><span class="nc">Person</span> <span class="n">hansi</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Person</span><span class="o">(</span><span class="s">"hansi"</span><span class="o">);</span>
+<span class="n">hansi</span><span class="o">.</span><span class="na">setFirma</span><span class="o">(</span><span class="k">new</span> <span class="nc">Firma</span><span class="o">(</span><span class="s">"IBM"</span><span class="o">));</span>
+
+<span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">printLine</span><span class="o">(</span><span class="n">hansi</span><span class="o">.</span><span class="na">getFirma</span><span class="o">().</span><span class="na">getName</span><span class="o">());</span>
+<span class="c1">// IBM</span></code></pre>
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="images/uml-complete-incomplete.png" alt="uml complete incomplete">
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="images/uml-disjoint-overlapping.png" alt="uml disjoint overlapping">
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_beziehungen_cld"><a class="anchor" href="#_beziehungen_cld"></a>7.1.4. Beziehungen CLD</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>Vererbung</p>
+</li>
+<li>
+<p>Assoziation (benutzt)</p>
+</li>
+<li>
+<p>Aggregation (Ganzes-Teile-Beziehung, zerstörungsfrei)</p>
+<div class="ulist">
+<ul>
+<li>
+<p>zB Auto - Autoreifen</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Komposition (Ganzes-Teile-Beziehung, zerstörend)</p>
+<div class="ulist">
+<ul>
+<li>
+<p>zB Haus - Etage, Buch - Kapitel</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="images/uml-beziehungen-notation.png" alt="uml beziehungen notation">
+</div>
+</div>
+<div class="paragraph">
+<p>Extension &#8594; Vererbung</p>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+Im Code gibt es zwischen Assoziation, Aggregation und Komposition keinen Unterschied
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_asciidoctor_wiederholung"><a class="anchor" href="#_asciidoctor_wiederholung"></a>7.2. Asciidoctor - Wiederholung</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Callout</p>
+</li>
+<li>
+<p>Admonition</p>
+</li>
+<li>
+<p>Präambel (preamble)</p>
+<div class="ulist">
+<ul>
+<li>
+<p>toc</p>
+</li>
+<li>
+<p>Verzeichnis für images usw</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Table</p>
+</li>
+<li>
+<p>Einfügen von Code</p>
+</li>
+<li>
+<p>numbered and unnumbered Lists</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
 </div>
 <div id="footer">
 <div id="footer-text">
 Version 1.0.0<br>
-Last updated 2024-11-05 11:40:20 UTC
+Last updated 2025-01-08 20:54:41 UTC
 </div>
 </div>
 </body>
