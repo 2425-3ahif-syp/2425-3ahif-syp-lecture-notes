@@ -1,0 +1,87 @@
+## UML (Unified Modeling Language)
+
+### Syntax (Schreibweise)
+Die Syntax beschreibt die Regeln und die Schreibweise, die eingehalten werden müssen.
+
+### Semantik (Inhalt)
+Die Semantik legt fest, welchen Inhalt oder welche Bedeutung die verschiedenen Elemente und Beziehungen haben.
+
+### Beispiel: UML-Diagramm
+
+```plantuml
+@startuml
+class Person {
+    -firstName: String
+    +dob: Number
+    ~method1()
+    #method2()
+}
+
+class Hobby {
+}
+
+(Person, Hobby) .. Ausfuerung
+
+class Firma {
+    angestellte: List<Person>
+}
+
+Person "*" --> "0..1" Firma : arbeitet für >
+Firma --> Person
+@enduml
+```
+
+- **Signatur:** Eine Signatur ist die Kombination aus einem Methodennamen, den Parametern und dem Rückgabewert. Sie dient zur eindeutigen Identifikation einer Methode.
+- **Kardinalität:** Beschreibt die Beziehung zwischen Tabellen oder Objekten, z. B. 1:1 oder n:m.
+- **Multiplizität:** Gibt an, wie viele Objekte einer Klasse instanziiert sein können.
+
+---
+
+## MQTT-Server
+Ein MQTT-Server dient als zentrale Datenplattform für die Kommunikation zwischen verschiedenen Systemen.
+
+### Prinzipien
+- **Subscribe (Abonnement erstellen):** Komponente abonnieren bestimmte Datenbereiche/Themen. Wenn neue Werte für diese Themen/Datenbereiche eintreffen, werden sie automatisch an die Abonnenten zugestellt.
+- **Publizieren:** Systeme können Daten zu spezifischen Themen senden, die dann von den Abonnenten empfangen werden.
+
+---
+
+## Protokolle
+Protokolle legen Verhaltensregeln für die Kommunikation zwischen Systemen fest. Sie sorgen dafür, dass Sender und Empfänger Daten einheitlich interpretieren können.
+
+### HTTP (Hypertext Transfer Protocol)
+- **Hypertext:** Ermöglicht, durch Anklicken von Links neue Seiten zu laden.
+- **Anwendungsfall:** Datenpakete in Form von HTML-Dokumenten übertragen.
+
+#### Internet für Menschen
+- **Webserver:** Stellt HTML-Dokumente bereit.
+- **Anfrage:** Nutzer stellen Anfragen an den Webserver und erhalten die entsprechenden HTML-Seiten zurück.
+
+#### Internet für Maschinen
+- **REST-Services:** Bieten Schnittstellen zur Kommunikation zwischen Maschinen.
+- **SOAP (Simple Object Access Protocol):** Ein alternatives Protokoll für die maschinelle Kommunikation.
+
+### Datenformate
+- Definieren das Erscheinungsbild und die Struktur von übertragenen Daten.
+
+---
+
+## Grob- vs. Feinentwurf
+
+### Grobentwurf
+- Konzentriert sich auf die grundlegende Struktur des Systems.
+- Definiert Hauptkomponenten und deren Beziehungen sowie Schnittstellen.
+
+
+### Feinentwurf
+- Geht ins Detail und beschreibt die genaue Implementierung.
+- Definiert Methoden, Attribute, etc. in beispielsweise einem Klassenmodell
+
+
+### Schnittstellen
+- Beschreiben, wie Daten zwischen verschiedenen Systemen übertragen werden.
+- Legen das Format und die Struktur der ausgetauschten Daten fest.
+
+---
+
+
