@@ -1,9 +1,12 @@
 package at.htl;
 
+// tag::stack[]
 public class MyStack {
 
     boolean isEmpty() {
-        return true;
+        Log.info("abc");
+        return true;  // <.>
     }
 
 }
+// end::stack[]

@@ -7,12 +7,16 @@ Thomas Stütz
 :sectnums:
 ifndef::imagesdir[:imagesdir: images]
 :toc:
+:source-highlighter: rouge
+:docinfo: shared
 ifdef::backend-html5[]
 // https://fontawesome.com/v4.7.0/icons/
 icon:file-text-o[link=https://github.com/2324-4bhif-wmc/2324-4bhif-wmc-lecture-notes/main/asciidocs/{docname}.adoc] ‏ ‏ ‎
 icon:github-square[link=https://github.com/2324-4bhif-wmc/2324-4bhif-wmc-lecture-notes] ‏ ‏ ‎
 icon:home[link=http://edufs.edu.htl-leonding.ac.at/~t.stuetz/hugo/2021/01/lecture-notes/]
 endif::backend-html5[]
+
+
 
 == 2024-10-01
 
@@ -231,5 +235,191 @@ IMPORTANT: Im Code gibt es zwischen Assoziation, Aggregation und Komposition kei
 * Table
 * Einfügen von Code
 * numbered and unnumbered Lists
+
+
+== 2025-01-21
+
+=== Unterschied CLD und OD
+
+[plantuml,cld-od,png]
+----
+@startuml
+class Head
+class Node
+
+Head -- Node
+Node -- Node
+@enduml
+----
+
+[plantuml,od-cld,png]
+----
+@startuml
+left to right direction
+
+object head
+object node1
+object node2
+object node3
+object node4
+object node5
+
+
+head -- node1
+node1 -- node2
+node2 -- node3
+node3 -- node4
+node4 -- node5
+@enduml
+----
+
+== 2025-01-28
+
+////
+
+[plantuml,harrucksteiner-cld,svg]
+----
+
+@startuml
+class Kino {
+    + Name: String
+    + Adresse: String
+}
+
+class Saal {
+    + Name: String
+    + Sitzplan: List<Sitz>
+}
+
+class Sitz {
+    + Reihe: String
+    + Platz: Integer
+}
+
+class Vorstellung {
+    + Datum: Date
+    + Beginnzeit: Time
+    + Filmtitel: String
+    + FreieSitze(): List<Sitz>
+}
+
+class Eintrittskarte {
+    + Kino: String
+    + Saal: String
+    + Filmtitel: String
+    + Datum: Date
+    + Beginnzeit: Time
+    + Nummer: Integer
+    + Reihe: String
+    + Platz: Integer
+    + Preis: Float
+}
+
+class Film {
+    + Titel: String
+    + Art: String
+    + Herstellungsjahr: Integer
+    + Land: String
+    + Sprache: String
+    + Dauer: Integer
+    + Verleih: String
+}
+
+@enduml
+----
+
+
+[plantuml,kinokette-cld,svg]
+----
+@startuml
+class Kino {
+}
+
+class Saal {
+}
+
+class Film {
+}
+
+class Vorstellung {
+}
+
+
+@enduml
+----
+
+////
+
+
+=== Asciidoctor
+
+==== Admonitions
+
+* Voraussetzung `:icons: font` in Präambel
+
+IMPORTANT: Das ist wichtig
+
+[source]
+----
+ifdef::env-github[]
+:tip-caption: :bulb:
+:note-caption: :information_source:
+:important-caption: :heavy_exclamation_mark:
+:caution-caption: :fire:
+:warning-caption: :warning:
+endif::[]
+----
+
+* Admonition mit Block
+
+[IMPORTANT]
+.Feeding the Werewolves
+====
+While werewolves are hardy community members, keep in mind the following dietary concerns:
+
+. They are allergic to cinnamon.
+. More than two glasses of orange juice in 24 hours makes them howl in harmony with alarms and sirens.
+. Celery makes them sad.
+====
+
+
+
+==== Callouts
+
+[source,java,highlight=1;3]
+----
+public class MyStack {
+
+    boolean isEmpty() { // <.>
+        return true; // <.>
+    }
+
+}
+----
+
+<.> Kommentar 1
+<.> Kommentar 2
+
+
+[source,java,highlight=1;3]
+----
+include::../../labs/tdd/src/main/java/at/htl/MyStack.java[tags=stack]
+----
+
+<.> Auch das ist ein Kommentar
+
+=== Git Architecture
+
+.https://unstop.com/blog/what-is-git
+image::git-architecture.png[]
+
+
+
+
+
+
+
+
+
 
 
