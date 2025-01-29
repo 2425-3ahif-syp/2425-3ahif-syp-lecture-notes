@@ -565,7 +565,7 @@ pre.rouge .gs {
 <div class="details">
 <span id="author" class="author">Thomas Stütz</span><br>
 <span id="revnumber">version 1.0.0,</span>
-<span id="revdate">2025-01-08</span>
+<span id="revdate">2025-01-29</span>
 <br><span id="revremark">Lecture Notes for Courses at HTL Leonding</span>
 </div>
 <div id="toc" class="toc2">
@@ -607,6 +607,17 @@ pre.rouge .gs {
 <ul class="sectlevel2">
 <li><a href="#_uml_klassendiagramm">7.1. UML-Klassendiagramm</a></li>
 <li><a href="#_asciidoctor_wiederholung">7.2. Asciidoctor - Wiederholung</a></li>
+</ul>
+</li>
+<li><a href="#_2025_01_21">8. 2025-01-21</a>
+<ul class="sectlevel2">
+<li><a href="#_unterschied_cld_und_od">8.1. Unterschied CLD und OD</a></li>
+</ul>
+</li>
+<li><a href="#_2025_01_28">9. 2025-01-28</a>
+<ul class="sectlevel2">
+<li><a href="#_asciidoctor">9.1. Asciidoctor</a></li>
+<li><a href="#_git_architecture">9.2. Git Architecture</a></li>
 </ul>
 </li>
 </ul>
@@ -1111,11 +1122,148 @@ Im Code gibt es zwischen Assoziation, Aggregation und Komposition keinen Untersc
 </div>
 </div>
 </div>
+<div class="sect1">
+<h2 id="_2025_01_21"><a class="anchor" href="#_2025_01_21"></a>8. 2025-01-21</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_unterschied_cld_und_od"><a class="anchor" href="#_unterschied_cld_und_od"></a>8.1. Unterschied CLD und OD</h3>
+<div class="imageblock">
+<div class="content">
+<img src="images/cld-od.png" alt="cld od" width="117" height="169">
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="images/od-cld.png" alt="od cld" width="656" height="48">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_2025_01_28"><a class="anchor" href="#_2025_01_28"></a>9. 2025-01-28</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_asciidoctor"><a class="anchor" href="#_asciidoctor"></a>9.1. Asciidoctor</h3>
+<div class="sect3">
+<h4 id="_admonitions"><a class="anchor" href="#_admonitions"></a>9.1.1. Admonitions</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>Voraussetzung <code>:icons: font</code> in Präambel</p>
+</li>
+</ul>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+Das ist wichtig
+</td>
+</tr>
+</table>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="rouge highlight"><code></code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Admonition mit Block</p>
+</li>
+</ul>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+<div class="title">Feeding the Werewolves</div>
+<div class="paragraph">
+<p>While werewolves are hardy community members, keep in mind the following dietary concerns:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>They are allergic to cinnamon.</p>
+</li>
+<li>
+<p>More than two glasses of orange juice in 24 hours makes them howl in harmony with alarms and sirens.</p>
+</li>
+<li>
+<p>Celery makes them sad.</p>
+</li>
+</ol>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_callouts"><a class="anchor" href="#_callouts"></a>9.1.2. Callouts</h4>
+<div class="listingblock">
+<div class="content">
+<pre class="rouge highlight"><code data-lang="java"><span class="hll"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">MyStack</span> <span class="o">{</span>
+</span>
+<span class="hll">    <span class="kt">boolean</span> <span class="nf">isEmpty</span><span class="o">()</span> <span class="o">{</span> <i class="conum" data-value="1"></i><b>(1)</b>
+</span>        <span class="k">return</span> <span class="kc">true</span><span class="o">;</span> <i class="conum" data-value="2"></i><b>(2)</b>
+    <span class="o">}</span>
+
+<span class="o">}</span></code></pre>
+</div>
+</div>
+<div class="colist arabic">
+<table>
+<tr>
+<td><i class="conum" data-value="1"></i><b>1</b></td>
+<td>Kommentar 1</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="2"></i><b>2</b></td>
+<td>Kommentar 2</td>
+</tr>
+</table>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="rouge highlight"><code data-lang="java"><span class="hll"><span class="nc">Unresolved</span> <span class="n">directive</span> <span class="n">in</span> <span class="n">index</span><span class="o">.</span><span class="na">adoc</span> <span class="o">-</span> <span class="nl">include:</span><span class="o">:../../</span><span class="n">labs</span><span class="o">/</span><span class="n">tdd</span><span class="o">/</span><span class="n">src</span><span class="o">/</span><span class="n">main</span><span class="o">/</span><span class="n">java</span><span class="o">/</span><span class="n">at</span><span class="o">/</span><span class="n">htl</span><span class="o">/</span><span class="nc">MyStack</span><span class="o">.</span><span class="na">java</span><span class="o">[</span><span class="n">tags</span><span class="o">=</span><span class="n">stack</span><span class="o">]</span>
+</span></code></pre>
+</div>
+</div>
+<div class="colist arabic">
+<table>
+<tr>
+<td><i class="conum" data-value="1"></i><b>1</b></td>
+<td>Auch das ist ein Kommentar</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_git_architecture"><a class="anchor" href="#_git_architecture"></a>9.2. Git Architecture</h3>
+<div class="imageblock">
+<div class="content">
+<img src="images/git-architecture.png" alt="git architecture">
+</div>
+<div class="title">Figure 1. <a href="https://unstop.com/blog/what-is-git" class="bare">https://unstop.com/blog/what-is-git</a></div>
+</div>
+</div>
+</div>
+</div>
 </div>
 <div id="footer">
 <div id="footer-text">
 Version 1.0.0<br>
-Last updated 2025-01-08 20:54:41 UTC
+Last updated 2025-01-29 05:54:16 UTC
 </div>
 </div>
 </body>
