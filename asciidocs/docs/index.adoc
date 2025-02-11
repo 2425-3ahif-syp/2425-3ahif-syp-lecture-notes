@@ -5,6 +5,8 @@ Thomas Stütz
 :experimental:
 :sectnumlevels: 4
 :sectnums:
+:source-highlighter: rouge
+:docinfo: shared
 ifndef::imagesdir[:imagesdir: images]
 :toc:
 :source-highlighter: rouge
@@ -416,9 +418,21 @@ image::git-architecture.png[]
 
 
 
+== 2025-02-04
 
+* https://www.conventionalcommits.org/en/v1.0.0/[Conventional Commits^]
 
+* Aufgabe:
+** User Stories erstellen
+** Asciidoc-Präsentation für gh-pages erstellen
 
+* Benennung von Files:
+** Jedes Gespräch ist mittels Ergebnisprotokoll zu dokumentieren (vgl. minutes-of-meetings.adoc)
+** Bezeichnung: yyyy-mm-dd-topic.adoc
+
+== 2025-02-11
+
+=== Aktivitätsdiagramme
 
 
 
