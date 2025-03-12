@@ -435,5 +435,12 @@ image::git-architecture.png[]
 === Aktivitätsdiagramme
 
 
+== 2025-03-11
+
+== GUI Gestaltung
+
+https://www.objectbay.com/blog/gestaltgesetze-der-wahrnehmung-nutzen-ux-design
+
+image::effektivitaet-effizienz.png[]
 
 
