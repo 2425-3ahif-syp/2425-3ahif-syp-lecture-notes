@@ -444,3 +444,26 @@ https://www.objectbay.com/blog/gestaltgesetze-der-wahrnehmung-nutzen-ux-design
 image::effektivitaet-effizienz.png[]
 
 
+== 2025-03-25
+
+=== git
+
+==== Branching
+
+==== Stashing
+
+==== Cherry-Picking
+
+== 2025-04-08
+
+image::cloud.png[]
+
+
+
+.Erstellen eines Quarkus-Projekts
+----
+mvn io.quarkus.platform:quarkus-maven-plugin:3.21.1:create \
+    -DprojectGroupId=at.htl \
+    -DprojectArtifactId=webserver \
+    -Dextensions='rest'
+----
