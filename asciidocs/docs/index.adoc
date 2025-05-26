@@ -467,3 +467,38 @@ mvn io.quarkus.platform:quarkus-maven-plugin:3.21.1:create \
     -DprojectArtifactId=webserver \
     -Dextensions='rest'
 ----
+
+
+== 2025-04-29
+
+=== Docker Build Context
+
+* https://www.howtogeek.com/devops/understanding-the-docker-build-context-why-you-should-use-dockerignore/[Understanding the Docker Build Context (Why You Should Use Dockerignore)^]
+
+++++
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ftnH9ZX1Atk?si=UJhtfZXI9MCqdUgo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+++++
+
+
+== 2025-05-20
+
+++++
+<iframe width="560" height="315" src="https://www.youtube.com/embed/xWWXD_NKpHs?si=zTbiOJAt_yZtEFVo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+++++
+
+
+++++
+<iframe width="560" height="315" src="https://www.youtube.com/embed/xo5V9g9joFs?si=R0y7nx9rmawwbr35" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+++++
+
+
+
+
+
+
+
+
+
+
+
+
