@@ -565,7 +565,7 @@ pre.rouge .gs {
 <div class="details">
 <span id="author" class="author">Thomas Stütz</span><br>
 <span id="revnumber">version 1.0.0,</span>
-<span id="revdate">2025-05-26</span>
+<span id="revdate">2025-05-27</span>
 <br><span id="revremark">Lecture Notes for Courses at HTL Leonding</span>
 </div>
 <div id="toc" class="toc2">
@@ -609,37 +609,45 @@ pre.rouge .gs {
 <li><a href="#_asciidoctor_wiederholung">7.2. Asciidoctor - Wiederholung</a></li>
 </ul>
 </li>
-<li><a href="#_2025_01_21">8. 2025-01-21</a>
+<li><a href="#_2025_01_14">8. 2025-01-14</a>
 <ul class="sectlevel2">
-<li><a href="#_unterschied_cld_und_od">8.1. Unterschied CLD und OD</a></li>
+<li><a href="#_uml_unified_modeling_language">8.1. UML (Unified Modeling Language)</a></li>
+<li><a href="#_mqtt_server">8.2. MQTT-Server</a></li>
+<li><a href="#_protokolle">8.3. Protokolle</a></li>
+<li><a href="#_grob_vs_feinentwurf">8.4. Grob- vs. Feinentwurf</a></li>
 </ul>
 </li>
-<li><a href="#_2025_01_28">9. 2025-01-28</a>
+<li><a href="#_2025_01_21">9. 2025-01-21</a>
 <ul class="sectlevel2">
-<li><a href="#_asciidoctor">9.1. Asciidoctor</a></li>
-<li><a href="#_git_architecture">9.2. Git Architecture</a></li>
+<li><a href="#_unterschied_cld_und_od">9.1. Unterschied CLD und OD</a></li>
 </ul>
 </li>
-<li><a href="#_2025_02_04">10. 2025-02-04</a></li>
-<li><a href="#_2025_02_11">11. 2025-02-11</a>
+<li><a href="#_2025_01_28">10. 2025-01-28</a>
 <ul class="sectlevel2">
-<li><a href="#_aktivitätsdiagramme">11.1. Aktivitätsdiagramme</a></li>
+<li><a href="#_asciidoctor">10.1. Asciidoctor</a></li>
+<li><a href="#_git_architecture">10.2. Git Architecture</a></li>
 </ul>
 </li>
-<li><a href="#_2025_03_11">12. 2025-03-11</a></li>
-<li><a href="#_gui_gestaltung">13. GUI Gestaltung</a></li>
-<li><a href="#_2025_03_25">14. 2025-03-25</a>
+<li><a href="#_2025_02_04">11. 2025-02-04</a></li>
+<li><a href="#_2025_02_11">12. 2025-02-11</a>
 <ul class="sectlevel2">
-<li><a href="#_git">14.1. git</a></li>
+<li><a href="#_aktivitätsdiagramme">12.1. Aktivitätsdiagramme</a></li>
 </ul>
 </li>
-<li><a href="#_2025_04_08">15. 2025-04-08</a></li>
-<li><a href="#_2025_04_29">16. 2025-04-29</a>
+<li><a href="#_2025_03_11">13. 2025-03-11</a></li>
+<li><a href="#_gui_gestaltung">14. GUI Gestaltung</a></li>
+<li><a href="#_2025_03_25">15. 2025-03-25</a>
 <ul class="sectlevel2">
-<li><a href="#_docker_build_context">16.1. Docker Build Context</a></li>
+<li><a href="#_git">15.1. git</a></li>
 </ul>
 </li>
-<li><a href="#_2025_05_20">17. 2025-05-20</a></li>
+<li><a href="#_2025_04_08">16. 2025-04-08</a></li>
+<li><a href="#_2025_04_29">17. 2025-04-29</a>
+<ul class="sectlevel2">
+<li><a href="#_docker_build_context">17.1. Docker Build Context</a></li>
+</ul>
+</li>
+<li><a href="#_2025_05_20">18. 2025-05-20</a></li>
 </ul>
 </div>
 </div>
@@ -1143,10 +1151,190 @@ Im Code gibt es zwischen Assoziation, Aggregation und Komposition keinen Untersc
 </div>
 </div>
 <div class="sect1">
-<h2 id="_2025_01_21"><a class="anchor" href="#_2025_01_21"></a>8. 2025-01-21</h2>
+<h2 id="_2025_01_14"><a class="anchor" href="#_2025_01_14"></a>8. 2025-01-14</h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="_unterschied_cld_und_od"><a class="anchor" href="#_unterschied_cld_und_od"></a>8.1. Unterschied CLD und OD</h3>
+<h3 id="_uml_unified_modeling_language"><a class="anchor" href="#_uml_unified_modeling_language"></a>8.1. UML (Unified Modeling Language)</h3>
+<div class="sect3">
+<h4 id="_syntax_schreibweise"><a class="anchor" href="#_syntax_schreibweise"></a>8.1.1. Syntax (Schreibweise)</h4>
+<div class="paragraph">
+<p>Die Syntax beschreibt die Regeln und die Schreibweise, die eingehalten werden müssen.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_semantik_inhalt"><a class="anchor" href="#_semantik_inhalt"></a>8.1.2. Semantik (Inhalt)</h4>
+<div class="paragraph">
+<p>Die Semantik legt fest, welchen Inhalt oder welche Bedeutung die verschiedenen Elemente und Beziehungen haben.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_beispiel_uml_diagramm"><a class="anchor" href="#_beispiel_uml_diagramm"></a>8.1.3. Beispiel: UML-Diagramm</h4>
+<div class="listingblock">
+<div class="content">
+<pre class="rouge highlight"><code data-lang="plantuml">@startuml
+class Person {
+    -firstName: String
+    +dob: Number
+    ~method1()
+    #method2()
+}
+
+class Hobby {
+}
+
+(Person, Hobby) .. Ausfuerung
+
+class Firma {
+    angestellte: List&lt;Person&gt;
+}
+
+Person "*" --&gt; "0..1" Firma : arbeitet für &gt;
+Firma --&gt; Person
+@enduml</code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Signatur:</strong> Eine Signatur ist die Kombination aus einem Methodennamen, den Parametern und dem Rückgabewert. Sie dient zur eindeutigen Identifikation einer Methode.</p>
+</li>
+<li>
+<p><strong>Kardinalität:</strong> Beschreibt die Beziehung zwischen Tabellen oder Objekten, z. B. 1:1 oder n:m.</p>
+</li>
+<li>
+<p><strong>Multiplizität:</strong> Gibt an, wie viele Objekte einer Klasse instanziiert sein können.</p>
+</li>
+</ul>
+</div>
+<hr>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_mqtt_server"><a class="anchor" href="#_mqtt_server"></a>8.2. MQTT-Server</h3>
+<div class="paragraph">
+<p>Ein MQTT-Server dient als zentrale Datenplattform für die Kommunikation zwischen verschiedenen Systemen.</p>
+</div>
+<div class="sect3">
+<h4 id="_prinzipien"><a class="anchor" href="#_prinzipien"></a>8.2.1. Prinzipien</h4>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Subscribe (Abonnement erstellen):</strong> Komponente abonnieren bestimmte Datenbereiche/Themen. Wenn neue Werte für diese Themen/Datenbereiche eintreffen, werden sie automatisch an die Abonnenten zugestellt.</p>
+</li>
+<li>
+<p><strong>Publizieren:</strong> Systeme können Daten zu spezifischen Themen senden, die dann von den Abonnenten empfangen werden.</p>
+</li>
+</ul>
+</div>
+<hr>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_protokolle"><a class="anchor" href="#_protokolle"></a>8.3. Protokolle</h3>
+<div class="paragraph">
+<p>Protokolle legen Verhaltensregeln für die Kommunikation zwischen Systemen fest. Sie sorgen dafür, dass Sender und Empfänger Daten einheitlich interpretieren können.</p>
+</div>
+<div class="sect3">
+<h4 id="_http_hypertext_transfer_protocol"><a class="anchor" href="#_http_hypertext_transfer_protocol"></a>8.3.1. HTTP (Hypertext Transfer Protocol)</h4>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Hypertext:</strong> Ermöglicht, durch Anklicken von Links neue Seiten zu laden.</p>
+</li>
+<li>
+<p><strong>Anwendungsfall:</strong> Datenpakete in Form von HTML-Dokumenten übertragen.</p>
+</li>
+</ul>
+</div>
+<div class="sect4">
+<h5 id="_internet_für_menschen"><a class="anchor" href="#_internet_für_menschen"></a>8.3.1.1. Internet für Menschen</h5>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Webserver:</strong> Stellt HTML-Dokumente bereit.</p>
+</li>
+<li>
+<p><strong>Anfrage:</strong> Nutzer stellen Anfragen an den Webserver und erhalten die entsprechenden HTML-Seiten zurück.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_internet_für_maschinen"><a class="anchor" href="#_internet_für_maschinen"></a>8.3.1.2. Internet für Maschinen</h5>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>REST-Services:</strong> Bieten Schnittstellen zur Kommunikation zwischen Maschinen.</p>
+</li>
+<li>
+<p><strong>SOAP (Simple Object Access Protocol):</strong> Ein alternatives Protokoll für die maschinelle Kommunikation.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_datenformate"><a class="anchor" href="#_datenformate"></a>8.3.2. Datenformate</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>Definieren das Erscheinungsbild und die Struktur von übertragenen Daten.</p>
+</li>
+</ul>
+</div>
+<hr>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_grob_vs_feinentwurf"><a class="anchor" href="#_grob_vs_feinentwurf"></a>8.4. Grob- vs. Feinentwurf</h3>
+<div class="sect3">
+<h4 id="_grobentwurf"><a class="anchor" href="#_grobentwurf"></a>8.4.1. Grobentwurf</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>Konzentriert sich auf die grundlegende Struktur des Systems.</p>
+</li>
+<li>
+<p>Definiert Hauptkomponenten und deren Beziehungen sowie Schnittstellen.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_feinentwurf"><a class="anchor" href="#_feinentwurf"></a>8.4.2. Feinentwurf</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>Geht ins Detail und beschreibt die genaue Implementierung.</p>
+</li>
+<li>
+<p>Definiert Methoden, Attribute, etc. in beispielsweise einem Klassenmodell</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_schnittstellen"><a class="anchor" href="#_schnittstellen"></a>8.4.3. Schnittstellen</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>Beschreiben, wie Daten zwischen verschiedenen Systemen übertragen werden.</p>
+</li>
+<li>
+<p>Legen das Format und die Struktur der ausgetauschten Daten fest.</p>
+</li>
+</ul>
+</div>
+<hr>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_2025_01_21"><a class="anchor" href="#_2025_01_21"></a>9. 2025-01-21</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_unterschied_cld_und_od"><a class="anchor" href="#_unterschied_cld_und_od"></a>9.1. Unterschied CLD und OD</h3>
 <div class="imageblock">
 <div class="content">
 <img src="images/cld-od.png" alt="cld od" width="117" height="169">
@@ -1161,12 +1349,12 @@ Im Code gibt es zwischen Assoziation, Aggregation und Komposition keinen Untersc
 </div>
 </div>
 <div class="sect1">
-<h2 id="_2025_01_28"><a class="anchor" href="#_2025_01_28"></a>9. 2025-01-28</h2>
+<h2 id="_2025_01_28"><a class="anchor" href="#_2025_01_28"></a>10. 2025-01-28</h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="_asciidoctor"><a class="anchor" href="#_asciidoctor"></a>9.1. Asciidoctor</h3>
+<h3 id="_asciidoctor"><a class="anchor" href="#_asciidoctor"></a>10.1. Asciidoctor</h3>
 <div class="sect3">
-<h4 id="_admonitions"><a class="anchor" href="#_admonitions"></a>9.1.1. Admonitions</h4>
+<h4 id="_admonitions"><a class="anchor" href="#_admonitions"></a>10.1.1. Admonitions</h4>
 <div class="ulist">
 <ul>
 <li>
@@ -1228,7 +1416,7 @@ Das ist wichtig
 </div>
 </div>
 <div class="sect3">
-<h4 id="_callouts"><a class="anchor" href="#_callouts"></a>9.1.2. Callouts</h4>
+<h4 id="_callouts"><a class="anchor" href="#_callouts"></a>10.1.2. Callouts</h4>
 <div class="listingblock">
 <div class="content">
 <pre class="rouge highlight"><code data-lang="java"><span class="hll"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">MyStack</span> <span class="o">{</span>
@@ -1269,7 +1457,7 @@ Das ist wichtig
 </div>
 </div>
 <div class="sect2">
-<h3 id="_git_architecture"><a class="anchor" href="#_git_architecture"></a>9.2. Git Architecture</h3>
+<h3 id="_git_architecture"><a class="anchor" href="#_git_architecture"></a>10.2. Git Architecture</h3>
 <div class="imageblock">
 <div class="content">
 <img src="images/git-architecture.png" alt="git architecture">
@@ -1280,7 +1468,7 @@ Das ist wichtig
 </div>
 </div>
 <div class="sect1">
-<h2 id="_2025_02_04"><a class="anchor" href="#_2025_02_04"></a>10. 2025-02-04</h2>
+<h2 id="_2025_02_04"><a class="anchor" href="#_2025_02_04"></a>11. 2025-02-04</h2>
 <div class="sectionbody">
 <div class="ulist">
 <ul>
@@ -1318,22 +1506,22 @@ Das ist wichtig
 </div>
 </div>
 <div class="sect1">
-<h2 id="_2025_02_11"><a class="anchor" href="#_2025_02_11"></a>11. 2025-02-11</h2>
+<h2 id="_2025_02_11"><a class="anchor" href="#_2025_02_11"></a>12. 2025-02-11</h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="_aktivitätsdiagramme"><a class="anchor" href="#_aktivitätsdiagramme"></a>11.1. Aktivitätsdiagramme</h3>
+<h3 id="_aktivitätsdiagramme"><a class="anchor" href="#_aktivitätsdiagramme"></a>12.1. Aktivitätsdiagramme</h3>
 
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_2025_03_11"><a class="anchor" href="#_2025_03_11"></a>12. 2025-03-11</h2>
+<h2 id="_2025_03_11"><a class="anchor" href="#_2025_03_11"></a>13. 2025-03-11</h2>
 <div class="sectionbody">
 
 </div>
 </div>
 <div class="sect1">
-<h2 id="_gui_gestaltung"><a class="anchor" href="#_gui_gestaltung"></a>13. GUI Gestaltung</h2>
+<h2 id="_gui_gestaltung"><a class="anchor" href="#_gui_gestaltung"></a>14. GUI Gestaltung</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p><a href="https://www.objectbay.com/blog/gestaltgesetze-der-wahrnehmung-nutzen-ux-design" class="bare">https://www.objectbay.com/blog/gestaltgesetze-der-wahrnehmung-nutzen-ux-design</a></p>
@@ -1346,27 +1534,27 @@ Das ist wichtig
 </div>
 </div>
 <div class="sect1">
-<h2 id="_2025_03_25"><a class="anchor" href="#_2025_03_25"></a>14. 2025-03-25</h2>
+<h2 id="_2025_03_25"><a class="anchor" href="#_2025_03_25"></a>15. 2025-03-25</h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="_git"><a class="anchor" href="#_git"></a>14.1. git</h3>
+<h3 id="_git"><a class="anchor" href="#_git"></a>15.1. git</h3>
 <div class="sect3">
-<h4 id="_branching"><a class="anchor" href="#_branching"></a>14.1.1. Branching</h4>
+<h4 id="_branching"><a class="anchor" href="#_branching"></a>15.1.1. Branching</h4>
 
 </div>
 <div class="sect3">
-<h4 id="_stashing"><a class="anchor" href="#_stashing"></a>14.1.2. Stashing</h4>
+<h4 id="_stashing"><a class="anchor" href="#_stashing"></a>15.1.2. Stashing</h4>
 
 </div>
 <div class="sect3">
-<h4 id="_cherry_picking"><a class="anchor" href="#_cherry_picking"></a>14.1.3. Cherry-Picking</h4>
+<h4 id="_cherry_picking"><a class="anchor" href="#_cherry_picking"></a>15.1.3. Cherry-Picking</h4>
 
 </div>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_2025_04_08"><a class="anchor" href="#_2025_04_08"></a>15. 2025-04-08</h2>
+<h2 id="_2025_04_08"><a class="anchor" href="#_2025_04_08"></a>16. 2025-04-08</h2>
 <div class="sectionbody">
 <div class="imageblock">
 <div class="content">
@@ -1385,10 +1573,10 @@ Das ist wichtig
 </div>
 </div>
 <div class="sect1">
-<h2 id="_2025_04_29"><a class="anchor" href="#_2025_04_29"></a>16. 2025-04-29</h2>
+<h2 id="_2025_04_29"><a class="anchor" href="#_2025_04_29"></a>17. 2025-04-29</h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="_docker_build_context"><a class="anchor" href="#_docker_build_context"></a>16.1. Docker Build Context</h3>
+<h3 id="_docker_build_context"><a class="anchor" href="#_docker_build_context"></a>17.1. Docker Build Context</h3>
 <div class="ulist">
 <ul>
 <li>
@@ -1401,7 +1589,7 @@ Das ist wichtig
 </div>
 </div>
 <div class="sect1">
-<h2 id="_2025_05_20"><a class="anchor" href="#_2025_05_20"></a>17. 2025-05-20</h2>
+<h2 id="_2025_05_20"><a class="anchor" href="#_2025_05_20"></a>18. 2025-05-20</h2>
 <div class="sectionbody">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/xWWXD_NKpHs?si=zTbiOJAt_yZtEFVo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/xo5V9g9joFs?si=R0y7nx9rmawwbr35" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -1411,7 +1599,7 @@ Das ist wichtig
 <div id="footer">
 <div id="footer-text">
 Version 1.0.0<br>
-Last updated 2025-05-26 21:00:29 UTC
+Last updated 2025-05-27 09:06:28 UTC
 </div>
 </div>
 </body>
