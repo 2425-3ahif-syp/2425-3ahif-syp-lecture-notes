@@ -583,6 +583,54 @@ mvn io.quarkus.platform:quarkus-maven-plugin:3.21.1:create \
 <iframe width="560" height="315" src="https://www.youtube.com/embed/xo5V9g9joFs?si=R0y7nx9rmawwbr35" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 ++++
 
+== 2025-06-03
+
+* https://achtung-designer.com/gestaltgesetze-die-designs-besser-machen/[Gestaltgesetze: 7 geniale Regeln, die deine Designs besser machen^
+
+=== uber-jar
+
+* Es wird ein jar-File erstellt, der alle Abhängigkeiten enthält.
+
+* Ein jar-File ist ein zip-File, das Java-Klassen und Ressourcen enthält.
+
+* Zusätzlich wird eine Manifest-Datei erstellt, die angibt, welche Klasse die `main`-Methode enthält.
+
+image::db-modi.png[]
+
+== 2025-06-10
+
+=== Übung
+
+* Erstellen eines Java-Webservers, der auf eine Datenbank zugreift.
+
+* Aus der Datenbank werden die Daten einer Tabelle ausgelesen und als html-table dargestellt.
+
+* Es ist ein Tabelle GREETING zu erstellen mit den Spalten:
+** ID (integer, primary key)
+** GREETING_TEXT (varchar(255)) zB "Hallo Welt", "Hallo Chris", "Hallo Hanan"
+
+* Aufruf mit http://localhost:8080/greeting/1 --> "Hallo Welt"
+* Aufruf mit http://localhost:8080/greeting/2 --> "Hallo Chris"
+* Aufruf mit http://localhost:8080/greeting/3 --> "Hallo Hanan"
+
+
+* Die Datenbank ist eine Postgres-Datenbank, die in einem Docker-Container läuft.
+
+* Bauen Sie anschließend eine gh-actions-pipeline, die ein Docker-Image des Webservers baut und dieses in der GitHub Container Registry speichert.
+
+
+* https://github.com/htl-leonding/docker-webserver-3ahif
+
+
+
+
+
+
+
+
+
+
+
 
 
 
