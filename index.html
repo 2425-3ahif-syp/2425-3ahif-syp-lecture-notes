@@ -565,7 +565,7 @@ pre.rouge .gs {
 <div class="details">
 <span id="author" class="author">Thomas Stütz</span><br>
 <span id="revnumber">version 1.0.0,</span>
-<span id="revdate">2025-05-27</span>
+<span id="revdate">2025-06-10</span>
 <br><span id="revremark">Lecture Notes for Courses at HTL Leonding</span>
 </div>
 <div id="toc" class="toc2">
@@ -648,6 +648,16 @@ pre.rouge .gs {
 </ul>
 </li>
 <li><a href="#_2025_05_20">18. 2025-05-20</a></li>
+<li><a href="#_2025_06_03">19. 2025-06-03</a>
+<ul class="sectlevel2">
+<li><a href="#_uber_jar">19.1. uber-jar</a></li>
+</ul>
+</li>
+<li><a href="#_2025_06_10">20. 2025-06-10</a>
+<ul class="sectlevel2">
+<li><a href="#_übung">20.1. Übung</a></li>
+</ul>
+</li>
 </ul>
 </div>
 </div>
@@ -1595,11 +1605,93 @@ Das ist wichtig
 <iframe width="560" height="315" src="https://www.youtube.com/embed/xo5V9g9joFs?si=R0y7nx9rmawwbr35" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 </div>
+<div class="sect1">
+<h2 id="_2025_06_03"><a class="anchor" href="#_2025_06_03"></a>19. 2025-06-03</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://achtung-designer.com/gestaltgesetze-die-designs-besser-machen/" class="bare">https://achtung-designer.com/gestaltgesetze-die-designs-besser-machen/</a>[Gestaltgesetze: 7 geniale Regeln, die deine Designs besser machen^</p>
+</li>
+</ul>
+</div>
+<div class="sect2">
+<h3 id="_uber_jar"><a class="anchor" href="#_uber_jar"></a>19.1. uber-jar</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Es wird ein jar-File erstellt, der alle Abhängigkeiten enthält.</p>
+</li>
+<li>
+<p>Ein jar-File ist ein zip-File, das Java-Klassen und Ressourcen enthält.</p>
+</li>
+<li>
+<p>Zusätzlich wird eine Manifest-Datei erstellt, die angibt, welche Klasse die <code>main</code>-Methode enthält.</p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="images/db-modi.png" alt="db modi">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_2025_06_10"><a class="anchor" href="#_2025_06_10"></a>20. 2025-06-10</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_übung"><a class="anchor" href="#_übung"></a>20.1. Übung</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Erstellen eines Java-Webservers, der auf eine Datenbank zugreift.</p>
+</li>
+<li>
+<p>Aus der Datenbank werden die Daten einer Tabelle ausgelesen und als html-table dargestellt.</p>
+</li>
+<li>
+<p>Es ist ein Tabelle GREETING zu erstellen mit den Spalten:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>ID (integer, primary key)</p>
+</li>
+<li>
+<p>GREETING_TEXT (varchar(255)) zB "Hallo Welt", "Hallo Chris", "Hallo Hanan"</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Aufruf mit <a href="http://localhost:8080/greeting/1" class="bare">http://localhost:8080/greeting/1</a> -&#8594; "Hallo Welt"</p>
+</li>
+<li>
+<p>Aufruf mit <a href="http://localhost:8080/greeting/2" class="bare">http://localhost:8080/greeting/2</a> -&#8594; "Hallo Chris"</p>
+</li>
+<li>
+<p>Aufruf mit <a href="http://localhost:8080/greeting/3" class="bare">http://localhost:8080/greeting/3</a> -&#8594; "Hallo Hanan"</p>
+</li>
+<li>
+<p>Die Datenbank ist eine Postgres-Datenbank, die in einem Docker-Container läuft.</p>
+</li>
+<li>
+<p>Bauen Sie anschließend eine gh-actions-pipeline, die ein Docker-Image des Webservers baut und dieses in der GitHub Container Registry speichert.</p>
+</li>
+<li>
+<p><a href="https://github.com/htl-leonding/docker-webserver-3ahif" class="bare">https://github.com/htl-leonding/docker-webserver-3ahif</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
 </div>
 <div id="footer">
 <div id="footer-text">
 Version 1.0.0<br>
-Last updated 2025-05-27 09:06:28 UTC
+Last updated 2025-06-10 10:41:19 UTC
 </div>
 </div>
 </body>
